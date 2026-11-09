@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>線上訂餐</title>
+    <style>
+        body { background-color: #f0f8ff; color: #333333; font-family: "微軟正黑體", sans-serif; margin: 0; padding: 0; }
+        header { background-color: #1e3a8a; color: white; text-align: center; padding: 20px; }
+        nav { background-color: #333; text-align: center; padding: 10px; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; font-size: 16px; }
+        nav a:hover { color: #10b981; text-decoration: underline; }
+        .current { color: #10b981; font-weight: bold; }
+        .container { width: 80%; margin: 20px auto; background-color: white; padding: 20px; border: 2px solid #1e3a8a; min-height: 400px; }
+        h2 { color: #1e3a8a; background-color: #e0f2fe; padding: 10px; }
+        form { background-color: #f9f9f9; padding: 20px; border: 1px solid #ddd; width: 60%; margin: 20px auto; }
+        footer { background-color: #333; color: white; text-align: center; padding: 15px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="icon.jpg" width="70" height="70">智膳學堂 SmartEats</h1>        <p>中小學學校午餐供應商</p>
+    </header>
+
+    <nav>
+        <a href="index.html">首頁</a> |
+        <a href="about.html">關於智膳</a> |
+        <a href="menu.html">當月菜單</a> |
+        <a href="order.html" class="current">線上訂餐</a> |
+        <a href="media.html">綠色廚房影片</a> |
+        <a href="blog.html">食育網誌</a> |
+        <a href="contact.html">聯絡我們</a> |
+        <a href="faq.html">常見問題</a>
+    </nav>
+
+    <div class="container">
+        <h2>4. 智能訂餐系統 (Order)</h2>
+        <p>請勾選您想要幫學生增訂的日期（每餐費用：$35 元）：</p>
+        <!-- 純 HTML 表單，點擊送出後會直接跳轉回首頁，不需要任何 JS -->
+        <form action="index.html" method="get">
+            <p><input type="checkbox" name="day" value="mon"> 星期一：鮮菇滑雞片飯 ($35)</p>
+            <p><input type="checkbox" name="day" value="tue"> 星期二：香煎植物肉漢堡扒飯 ($35)</p>
+            <p><input type="checkbox" name="day" value="wed"> 星期三：日式咖哩燉牛肉飯 ($35)</p>
+            <p><input type="checkbox" name="day" value="thu"> 星期四：鮮菇滑雞片飯 ($35)</p>
+            <p><input type="checkbox" name="day" value="fri"> 星期五：香煎植物肉漢堡扒飯 ($35)</p>
+            <br>
+            <input type="submit" value="送出訂餐登記資料" style="padding: 8px 20px; background-color: #1e3a8a; color: white; border: none; cursor: pointer;">
+        </form>
+    </div>
+
+    <footer></footer>
+</body>
+</html>

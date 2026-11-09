@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>聯絡我們</title>
+    <style>
+        body { background-color: #f0f8ff; color: #333333; font-family: "微軟正黑體", sans-serif; margin: 0; padding: 0; }
+        header { background-color: #1e3a8a; color: white; text-align: center; padding: 20px; }
+        nav { background-color: #333; text-align: center; padding: 10px; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; font-size: 16px; }
+        nav a:hover { color: #10b981; text-decoration: underline; }
+        .current { color: #10b981; font-weight: bold; }
+        .container { width: 80%; margin: 20px auto; background-color: white; padding: 20px; border: 2px solid #1e3a8a; min-height: 400px; }
+        h2 { color: #1e3a8a; background-color: #e0f2fe; padding: 10px; }
+        form { background-color: #f9f9f9; padding: 20px; border: 1px solid #ddd; width: 70%; margin: 20px auto; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: inline-block; width: 100px; font-weight: bold; }
+        footer { background-color: #333; color: white; text-align: center; padding: 15px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="icon.jpg" width="70" height="70">智膳學堂 SmartEats</h1>        <p>中小學學校午餐供應商</p>
+    </header>
+
+    <nav>
+        <a href="index.html">首頁</a> |
+        <a href="about.html">關於智膳</a> |
+        <a href="menu.html">當月菜單</a> |
+        <a href="order.html">線上訂餐</a> |
+        <a href="media.html">綠色廚房影片</a> |
+        <a href="blog.html">食育網誌</a> |
+        <a href="contact.html" class="current">聯絡我們</a> |
+        <a href="faq.html">常見問題</a>
+    </nav>
+
+    <div class="container">
+        <h2>7. 聯絡我們 / 學校試餐申請表單 (Contact)</h2>
+        <p>如果您想了解更多細節或為學校申請試餐，請填寫下面表格聯絡我們（滿足聯絡頁面與表單需求）：</p>
+        
+        <form action="index.html" method="get">
+            <div class="form-group">
+                <label>學校名稱：</label>
+                <input type="text" name="school" required placeholder="請填寫學校名稱">
+            </div>
+            <div class="form-group">
+                <label>聯絡人：</label>
+                <input type="text" name="name" required placeholder="陳老師 / 張先生">
+            </div>
+            <div class="form-group">
+                <label>聯絡電話：</label>
+                <input type="tel" name="phone" required placeholder="例如: 23456789">
+            </div>
+            <div class="form-group">
+                <label>備註訊息：</label><br>
+                <textarea name="msg" rows="4" style="width: 100%;" placeholder="請輸入您的具體需求..."></textarea>
+            </div>
+            <input type="submit" value="提交表單" style="padding: 8px 20px; background-color: #10b981; color: white; border: none; cursor: pointer;">
+        </form>
+    </div>
+
+    <footer></footer>
+</body>
+</html>
